@@ -311,7 +311,7 @@ $("#preferences").submit(function(e) {
         $("#preferencesFeedback").text("Please select a topic.");
     } else if (topics.indexOf("Anything") !== -1 && topics.length > 1) {
         $("#preferencesFeedbackContainer").show();
-        $("#preferencesFeedback").text("You can't select 'Anything' as a topic along with another topic.");
+        $("#preferencesFeedback").text("You can't select that specific topic as a topic along with another topic. Its a Dedicated topic.");
     } else {
         var data = {
             type: $("input[name='type']:checked").val(),
