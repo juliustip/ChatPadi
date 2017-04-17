@@ -21,8 +21,8 @@ const express = require("express"),
     app = express(),
     http = require("http").Server(app),
     io = require("socket.io")(http);
-    var PORT = '3000';
-http.listen(PORT);
+
+http.listen(9000);
 
 app.use(express.static(__dirname + "/public"));
 
