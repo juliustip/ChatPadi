@@ -2,7 +2,7 @@ module.exports = function(io) {
 
     var users = {},
         isprofanity = require('isprofanity'),
-        googleTranslate = require('google-translate')("pz7XtlQC-PYx-jrVMJErTcg"),
+        googleTranslate = require('google-translate')("AIzaSyD6kezT92ICuWlazE-dgFXChb9viUwVWZY"), //Make sure to Add Restriction rules to prevent unathorised usage.
         randomstring = require("randomstring"),
 
         motivationalMessages = {
