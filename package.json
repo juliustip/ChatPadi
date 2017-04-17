@@ -2,7 +2,7 @@
   "name": "ChatPadi",
   "version": "1.0.0",
   "description": "Anonymous Web Chat",
-  "__author": "AJ",
+  "author": "AJ",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
