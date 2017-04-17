@@ -22,7 +22,9 @@ const express = require("express"),
     http = require("http").Server(app),
     io = require("socket.io")(http);
 
-http.listen(9000);
+const PORT = process.env.PORT || 9000
+
+http.listen(PORT);
 
 app.use(express.static(__dirname + "/public"));
 
