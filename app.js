@@ -22,7 +22,7 @@ const express = require("express"),
     http = require("http").Server(app),
     io = require("socket.io")(http);
 
-http.listen(3000);
+http.listen(9000);
 
 app.use(express.static(__dirname + "/public"));
 
