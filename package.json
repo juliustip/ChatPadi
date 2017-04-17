@@ -1,0 +1,34 @@
+{
+  "name": "ChatPadi",
+  "version": "1.0.0",
+  "description": "Anonymous Web Chat",
+  "__author": "AJ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && and exit"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.10.2",
+    "__google-translate": "^2.0.4",
+    "isprofanity": "^1.0.9",
+    "nodemailer": "^2.7.0",
+    "nodemon": "^1.11.0",
+    "randomstring": "^1.1.5",
+    "socket.io": "^1.7.2"
+  },
+  
+ "repository": {
+    "type": "git",
+    "url": "https://github.com/juliustip/ChatPadi"
+  },
+  "bugs": {
+    "url": "https://github.com/juliustip/ChatPadi/issues"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "socket.io"
+  ]
+}

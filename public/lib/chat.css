@@ -1,0 +1,182 @@
+#messageForm {
+    background: #000;
+    bottom: 0;
+    color: #FFF;
+    display: none;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+}
+
+#messages > p {
+    color: #FFF;
+    margin: 0;
+    max-width: 75%;
+    word-break: break-all;
+}
+
+#messages > p#userDisplay {
+    max-width: 100%;
+}
+
+#messages > p > p {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 700;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+#messages > p#userDisplay > p.matched {
+    background: #1E90FF;
+}
+
+#messages > p#userDisplay > p.user {
+    background: #2ecc71;
+    float: right;
+}
+
+#messages > p.received > p {
+    background: #1E90FF;
+}
+
+#messages > p.sent {
+    margin-left: auto;
+    text-align: right;
+}
+
+#messages > p.sent > p {
+    background: #2ecc71;
+}
+
+#messages > p.date {
+    max-width: 100%;
+    text-align: center;
+}
+
+#messages > p.date > p {
+    background: #d6d5d5;
+    margin: 0;
+}
+
+#messages > p > p > p {
+    font-size: smaller;
+    font-weight: initial;
+    margin: 0;
+    display: block;
+}
+
+.deliveryImg.glyphicon {
+    margin: 0 2px;
+}
+
+#newMessage i {
+    margin-left: 2px;
+}
+
+#chat {
+    display: none;
+}
+
+#startContainer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+}
+
+#preferences {
+    text-align: center;
+}
+
+#chatButtons {
+    display: none;
+    position: fixed;
+    width: 100%;
+}
+
+#reportButton {
+    float: right;
+}
+
+#gameSelect button {
+    width: 100%;
+}
+
+legend {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+#messagesContainer {
+    display: none;
+}
+
+#feedbackContainer {
+    display: inline-block;
+    text-align: center;
+}
+
+#motivationalMessageContainer {
+    display: none;
+}
+
+#motivationalMessage {
+
+    font-size: xx-large;
+}
+
+#feedback button {
+    margin-left: 5px;
+}
+
+#notificationsContainer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+#notifications {
+    display: inline-block;
+}
+
+.notification {
+    display: none;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+#confirmationContainerContainer {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+    opacity: 0;
+    z-index: -1000;
+}
+
+#confirmationContainer {
+    display: inline-block;
+}
+
+#confirmationButtons button {
+    margin-left: 5px;
+}
+
+#preferencesFeedbackContainer {
+    display: none;
+}
+
+#preferencesFeedback {
+    display: inline-block;
+}

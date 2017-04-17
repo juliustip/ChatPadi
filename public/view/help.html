@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="AJ">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <!-- Bootstrap stylesheet-->
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="/lib/main.css"/>
+        <link rel="stylesheet" href="/lib/help.css" />
+        <link rel="icon" href="/images/logo.png">
+        <title>Help - Padi Support</title>
+    </head>
+
+    <body>
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" id="logoContainer" href="/"><img id="logo" src="/images/logo.png" alt="Logo for Padi Support"> </a>
+                    <a class="navbar-brand" href="/">Padi Support</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/contact">Contact</a></li>
+                        <li class="active"><a href="/help" >Help</a></li>
+                    </ul>
+               <!--     <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <label id="languageLabel" for="language">Your Chosen Language</label>
+                            <select id="language" class="form-control">
+                                <option>ENG</option>
+                                <option>POL</option>
+                                <option>BG</option>
+                                <option>WAL</option>
+                            </select>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+
+        <div id="help">
+
+            <div class="container">
+
+                <header>
+                    <h1>Help</h1>
+                </header>
+
+                <div class="page-header">
+                    <h2>On Start Page.</h2>
+                </div>
+
+                <p>You must do the following to chat to another user. </p>
+
+                <p>These two first in any order.</p>
+
+                <ol>
+                    <li>Choose whether you are a Supporter or you need Support</li>
+                    <li>Select what you want to talk about</li>
+                </ol>
+
+                <p>Then click <button class="btn btn-primary">Start Chatting</button> to Find a Match and Start Chatting.</p>
+
+                <div class="page-header">
+                    <h2>On Chat Page.</h2>
+                </div>
+
+                <p>When matched with a user you can do the following in any order.</p>
+
+                <ul>
+                    <li class="form-inline">You can Type into  <label id="messageLabel" for="message">Your Text Message</label> <input placeholder="e.g. hello :)..." class="form-control" id="message"/> and Send a text Message by pressing Enter or <button class="btn btn-default">Send</button>.</li>
+                    <li>You can Skip the matched user by clicking on <button class="btn btn-danger">Skip User</button>.</li>
+                    <li>You can Report the matched user by clicking on <button class="btn btn-warning">Report User</button>.</li>
+                    <li>You can invite the other user to a game, to choose a game click <button type="button" class="btn btn-default">
+                        🎮
+                    </button> then click on your chosen game by clicking on choosing game button like <button type="button" class="btn btn-default">
+                        🎮
+                    </button>.</li>
+                </ul>
+
+                <p>If you skip, report, get skipped, reported or blocked you will be redirected to start page where you can change your preferences and match with another user to start chatting again.</p>
+
+            </div>
+        </div>
+        <script type="text/javascript" src="/lib/jquery-3.1.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/lib/fixedFooterHeader.js"></script>
+    </body>
+</html>

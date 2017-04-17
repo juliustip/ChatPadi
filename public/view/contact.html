@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="AJ">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <!-- Bootstrap stylesheet-->
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="/lib/main.css"/>
+        <link rel="stylesheet" href="/lib/contact.css" />
+        <link rel="icon" href="/images/logo.png">
+        <title>Contact Padi Support</title>
+    </head>
+
+    <body>
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" id="logoContainer" href="/"><img id="logo" src="/images/logo.png" alt="Logo for Padi Support"> </a>
+                    <a class="navbar-brand" href="/" >Padi Support</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a  href="/contact">Contact</a></li>
+                        <li><a href="/help">Help</a></li>
+                    </ul>
+                 <!--    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <label id="languageLabel" for="language">Your Chosen Language</label>
+                           <select id="language" class="form-control">
+                                <option>ENG</option>
+                                <option>YORUBA</option>
+                                <option>IBGO</option>
+                                <option>WAL</option>
+                            </select>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+
+        <div id="contact">
+            <div class="container">
+
+                <form id="contactForm" method="post">
+
+                    <h2>Contact Us</h2>
+
+                    <p>Use this contact form for any enquiries or to give us any feedback quickly, or you can send your
+                        enquiries or messages to <a href="mailto:chatpadi@localhost" target="_blank">chatpadi@localhost</a>.
+                    </p>
+                    <p><span class="required">*</span> indicates a required field.</p>
+
+                    <div class="form-group">
+                        <label for="contactType">Select the type of message to send.</label>
+                        <select name="contactType" id="contactType" class="form-control">
+                            <option value="Enquiry" selected>Enquiry</option>
+                            <option value="Message">Message</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="emailGroup">
+                        <label for="emailInput">Your Email Address <span class="required">*</span></label>
+                        <input type="email" name="emailInput" placeholder="e.g. joe@example.com" required tabindex="1" id="emailInput"
+                               title="Email Address" oninput="validateEmail(this.value)" class="form-control input">
+                        <p id="emailFeedback"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subjectInput">The Message Subject</label>
+                        <input type="text" name="subjectInput" placeholder="e.g. App Feedback" tabindex="2" id="subjectInput"
+                               title="Subject of Message" class="form-control input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="messageInput">Your Message <span class="required">*</span></label>
+                        <textarea name="messageInput" placeholder="e.g. Your app could do with more colour." required tabindex="3" id="messageInput"
+                                  title="The Message" oninput="validateMessage(this.value)" class="form-control input"></textarea>
+                        <p id="messageFeedback"></p>
+                    </div>
+
+                    <button id="submit" type="submit" class="btn btn-success" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Sending">Send</button>
+
+                    <p id="feedback"></p>
+
+                </form>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/lib/jquery-3.1.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/lib/contactForm.js"></script>
+        <script type="text/javascript" src="/lib/fixedFooterHeader.js"></script>
+    </body>
+</html>
